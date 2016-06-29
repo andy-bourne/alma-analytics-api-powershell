@@ -36,7 +36,7 @@ run_snapshot_report basically just handles the creation of an "SAWX filter" (XML
 In alma_analytics_API_core_utilities.ps1 ,
 run_report_and_output_to_csv  handles the Alma Analytics API 'paging' and 'resumption key' features, and
 [finally!] get_data_from_Alma_Analytics_API_web_service is where we actually send a GET request to the API, as shown below...
-
+```
 if ($resumption_token -eq $null){
    $rest_url = "https://api-eu.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=$report_path&apikey=$apikey&limit=$limit&filter=$filter"
 }else{
@@ -44,7 +44,7 @@ if ($resumption_token -eq $null){
 }
 ...
 $response = Invoke-WebRequest -uri $rest_url
-
+```
 
 Writing the output to a csv file is very easy thanks to Powershell's Export-Csv function (referred to as a 'cmdlet' in Powershell terms)...
 $data_chunk.Row | Export-Csv $output_filename -NoTypeInformation -Append -Force
