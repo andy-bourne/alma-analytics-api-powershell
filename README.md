@@ -62,7 +62,7 @@ to something like
 ```
 "dummy","department_name","expiry_date","username","user_group_code","user_group_name"
 ```
-i.e. this is dealing with the rather unhelpful feature of the API where the output dataset does not use the actual field names that you see within Alma Analytics.
+i.e. this is dealing with the rather unhelpful feature of the API where the output dataset does include any meaningful field names.
 
 
 
