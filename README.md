@@ -47,7 +47,9 @@ $response = Invoke-WebRequest -uri $rest_url
 ```
 
 Writing the output to a csv file is very easy thanks to Powershell's Export-Csv function (referred to as a 'cmdlet' in Powershell terms)...
+```
 $data_chunk.Row | Export-Csv $output_filename -NoTypeInformation -Append -Force
+```
 ... where $data_chunk.Row is an object containing multiple rows of output from the report.
 
 
