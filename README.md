@@ -20,9 +20,13 @@ The Alma Analytics API features reflected in the code are:
 The script alma_analytics_API_demo.ps1 is the starting point.
 
 To use it you would have to edit the line...
+```
 $report_path = "%2Fshared%2FSalford University%2FReports%2FFulfillment%2FCirculation Coordinator%2Fwork_in_progress_current_users_given_cutoff_date_andy_bourne"
+```
 ...to refer to one of your own reports and you would have to edit the line...
+```
 $private:apikey = "************************************"
+```
 ... to use your own Alma Analytics API key
 
 alma_analytics_API_demo.ps1 uses a function called run_snapshot_report from the file alma_analytics_API_run_snapshot_report.ps1 . 
