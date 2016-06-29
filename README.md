@@ -50,7 +50,7 @@ Writing the output to a csv file is very easy thanks to Powershell's Export-Csv 
 ```
 $data_chunk.Row | Export-Csv $output_filename -NoTypeInformation -Append -Force
 ```
-... where $data_chunk.Row is an object containing multiple rows of output from the report.
+... where `$data_chunk.Row` is an object containing multiple rows of output from the report.
 
 
 There is also a function called `copy_with_new_header_line` that just copies from one csv file to another, changing the first line from something like
