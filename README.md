@@ -53,10 +53,14 @@ $data_chunk.Row | Export-Csv $output_filename -NoTypeInformation -Append -Force
 
 There is also a function called copy_with_new_header_line...
 all it does is copy from one csv file to another, changing the first line from something like
-$original_header_line = '"Column0","Column1","Column2","Column3","Column4","Column5"'
+```
+"Column0","Column1","Column2","Column3","Column4","Column5"
+```
 to something like
-$new_header_line = '"dummy","department_name","expiry_date","username","user_group_code","user_group_name"'
-- i.e. this is dealing with the rather unhelpful feature of the API where the output dataset does not use the actual field names that you see within Alma Analytics.
+```
+"dummy","department_name","expiry_date","username","user_group_code","user_group_name"
+```
+i.e. this is dealing with the rather unhelpful feature of the API where the output dataset does not use the actual field names that you see within Alma Analytics.
 
 
 
